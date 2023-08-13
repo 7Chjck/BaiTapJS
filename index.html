@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container text-center">
+        <h3>Xuất 3 số theo thứ tự tăng dần</h3>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="numberMot" class="form-control" placeholder="Số thứ nhất" >
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="numberHai" class="form-control" placeholder="Số thứ hai" >
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="numberBa" class="form-control" placeholder="Số thứ ba" >
+        </div>
+        <button id="btnthuTu">Thứ tự</button>
+        <div id="thuTu"></div>
+    </div>
+    <br> <br> <br>
+    <div class="container text-center">
+        <h3>Chương Trình Chào hỏi các thành viên</h3>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" name="" id="" class="form-control" placeholder="Ai là Người sử dụng máy ?
+            B : Bố 
+            M : Mẹ 
+            A : Anh Trai 
+            E : Em gái" disabled >
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" name="" id="user" onkeydown="return /[a-z]/i.test(event.key)" class="form-control" placeholder="Nhập  vào Người Sử dụng máy" >
+        </div>
+        <button id="btnChaoHoi">Câu Trả Lời</button>
+        <div id="result"></div>
+    </div>
+    <br> <br> <br>
+    <div class="container text-center">
+        <h3>Xuất ra số nguyên có bao nhiêu số lẻ và chẵn </h3>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="soMot"  min=0 oninput="validity.valid||(value='');" class="form-control" placeholder="Số thứ nhất" >
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="soHai"  min=0 oninput="validity.valid||(value='');" class="form-control" placeholder="Số thứ hai" >
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="soBa" min=0 oninput="validity.valid||(value='');" class="form-control" placeholder="Số thứ ba" >
+        </div>
+        <button id="btnLeChan">Thứ tự</button>
+        <div id="ketQua"></div>
+    </div>
+    <br> <br><br>
+    <div class="container text-center">
+        <h3>Hay cho biết đó là tam giác gì khi nhập 3 cạnh tam giác</h3>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="canhMot"  min=0 oninput="validity.valid||(value='');" class="form-control" placeholder="cạnh thứ nhất" >
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="canhHai"  min=0 oninput="validity.valid||(value='');" class="form-control" placeholder="cạnh thứ hai" >
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="number" name="" id="canhBa" min=0 oninput="validity.valid||(value='');" class="form-control" placeholder="cạnh thứ ba" >
+        </div>
+        <button id="btnTamGiac">Thứ tự</button>
+        <div id="tamGiac"></div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
